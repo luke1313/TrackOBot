@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/main_pink"
+
+    android:layout_height="match_parent">
+
+
+  <LinearLayout android:layout_width="match_parent" android:orientation="vertical"
+      android:background="@drawable/card_bg"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:padding="8dp"
+      android:animateLayoutChanges="true"
+      android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/explanation_username"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/setup_activity_link"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        android:textSize="16sp" android:textColor="@color/blue_link"
+        android:text="@string/explanation_url"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="16sp"
+
+        android:text="@string/explanation_additional"/>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        xmlns:float="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/setup_activity_username"
+        android:layout_height="wrap_content"
+        float:fletFloatingHint="@string/hint_username"/>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        xmlns:float="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/setup_activity_accestoken"
+        android:layout_height="wrap_content"
+        float:fletFloatingHint="@string/hint_accestoken"/>
+
+    <com.dd.CircularProgressButton
+        xmlns:cpb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/setup_activity_confirm"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        cpb:cpb_textIdle="@string/button_idle"
+        cpb:cpb_textComplete="@string/button_success"
+        cpb:cpb_textError="@string/button_error"/>
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:visibility="gone" android:id="@+id/username_error" android:textColor="@color/red"
+        android:text="Your username or acces-token is not correct - please make sure you entered it correctly and try again!"/>
+
+  </LinearLayout>
+
+</FrameLayout>

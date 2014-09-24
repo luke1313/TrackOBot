@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/drawer_settings_padding"
+    android:paddingBottom="@dimen/drawer_settings_padding"
+    android:textSize="@dimen/drawer_settings_textSize"
+    android:textColor="@color/drawer_settings_entry"
+    android:id="@+id/drawer_entry_settings_text"
+    android:layout_height="match_parent"/>

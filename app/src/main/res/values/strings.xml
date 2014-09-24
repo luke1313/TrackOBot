@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Track-O-Bot</string>
+  <string name="action_settings">Settings</string>
+
+  <string name="error_loading">An error occured by loading the data.</string>
+
+  <string name="button_error">Error</string>
+  <string name="button_success">Success</string>
+  <string name="button_idle">Check</string>
+  <string name="explanation_username">In order to use this app you need to get your username and
+    your accestoken from the Track-O-Bot Settings site. You can find this at:
+  </string>
+  <string name="explanation_url">https://trackobot.com/profile/settings/api</string>
+  <string name="explanation_additional">Once you found it just put it in here:</string>
+  <string name="error_username_empty">You need to put in a username.</string>
+  <string name="error_token_empty">You need to put in a acces-token.</string>
+  <string name="chooser_title">Share this Link via</string>
+
+  <string name="hint_username">Username</string>
+  <string name="hint_accestoken">Acces-Token</string>
+  <string name="won">won</string>
+  <string name="lost">lost</string>
+
+  <string-array name="mode_spinner">
+    <item>All Modes</item>
+    <item>Ranked</item>
+    <item>Casual</item>
+    <item>Arena</item>
+    <item>Friendly</item>
+  </string-array>
+
+  <string-array name="time_spinner">
+    <item>All</item>
+    <item>24 hours</item>
+    <item>3 days</item>
+    <item>1 month</item>
+  </string-array>
+
+  <string-array name="pager_titles">
+    <item>History</item>
+    <item>Arena</item>
+    <item>Class-Stats</item>
+    <item>Arena-Stats</item>
+  </string-array>
+
+
+</resources>

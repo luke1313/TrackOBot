@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="color_paladin">#ddba00</color>
+  <color name="color_rogue">#666761</color>
+  <color name="color_warlock">#9230d4</color>
+  <color name="color_mage">#00bede</color>
+  <color name="color_hunter">#01a101</color>
+  <color name="color_shaman">#0321b7</color>
+  <color name="color_priest">#dad6bf</color>
+  <color name="color_druid">#a04d09</color>
+  <color name="color_warrior">#c01603</color>
+</resources>

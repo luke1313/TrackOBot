@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/drawer_settings_padding"
+    android:paddingBottom="12dp"
+    android:paddingLeft="8dp"
+    android:orientation="vertical"
+    android:paddingRight="8dp"
+    android:layout_height="wrap_content">
+
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp" android:id="@+id/drawer_entry_headline_text"
+      android:textSize="14sp"
+      android:textStyle="bold" android:textColor="@color/white"/>
+
+  <View android:layout_width="match_parent" android:layout_height="4px"
+      android:background="@color/drawer_settings_divider_headline"/>
+</LinearLayout>

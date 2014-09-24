@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:gravity="center_vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+  <LinearLayout android:layout_width="40dp" android:layout_height="wrap_content"
+      android:layout_marginRight="16dp" android:orientation="vertical">
+    <com.trackobot.android.util.ClassIcon
+        xmlns:class="http://schemas.android.com/apk/res-auto"
+        style="@style/row_classicon"
+        class:border_width="2dp"
+        android:id="@+id/arena_row_class_icon"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_classname" android:id="@+id/arena_row_class"/>
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+      android:layout_weight="1" android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_content_text" android:id="@+id/arena_row_wins"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_content_extra_text"
+        android:id="@+id/arena_row_date"/>
+
+  </LinearLayout>
+
+
+</LinearLayout>

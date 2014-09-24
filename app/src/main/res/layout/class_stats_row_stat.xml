@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+
+  <LinearLayout android:layout_width="wrap_content"
+      android:layout_height="wrap_content" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="40dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+      <TextView android:layout_width="16dp" android:layout_height="wrap_content"
+          style="@style/row_content_extra_text_without"
+          android:gravity="center"
+          android:id="@+id/class_stats_row_stat_as"/>
+      <com.trackobot.android.util.ClassIcon
+          android:id="@+id/class_stats_row_stat_classicon"
+          style="@style/row_classicon_class_stat"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_classname"
+        android:id="@+id/class_stats_row_stat_class"/>
+
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+      android:orientation="vertical"
+      android:layout_marginLeft="16dp"
+      android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/class_stats_row_stat_winrate" style="@style/row_content_text"/>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:id="@+id/class_stats_row_stat_wins"
+          style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:text=" Wins, " style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:id="@+id/class_stats_row_stat_losses"
+          style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:text=" Losses" style="@style/row_content_extra_text"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>

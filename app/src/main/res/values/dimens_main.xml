@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="activity_main_tab_height">48dp</dimen>
+  <dimen name="activity_main_tab_indicator_height">4dp</dimen>
+  <dimen name="drawer_top_offset">100dp</dimen>
+</resources>

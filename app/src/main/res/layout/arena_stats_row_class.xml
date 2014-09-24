@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+  <LinearLayout android:layout_width="40dp" android:layout_height="wrap_content"
+      android:layout_marginRight="16dp" android:orientation="vertical">
+    <com.trackobot.android.util.ClassIcon
+        xmlns:class="http://schemas.android.com/apk/res-auto"
+        style="@style/row_classicon"
+        class:border_width="2dp"
+        android:id="@+id/arena_stats_row_stat_class_icon"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_classname"
+        android:id="@+id/arena_stats_row_stat_class_name"/>
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+      android:layout_height="wrap_content" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView android:layout_width="wrap_content"
+          android:id="@+id/arena_stats_row_stat_runs"
+          style="@style/row_content_text"
+          android:layout_height="wrap_content" android:text=""/>
+      <TextView android:layout_width="wrap_content"
+          style="@style/row_content_text"
+          android:layout_height="wrap_content" android:text=" runs, Ø "/>
+      <TextView android:layout_width="wrap_content"
+          style="@style/row_content_text"
+          android:id="@+id/arena_stats_row_stat_average"
+          android:layout_height="wrap_content" android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          style="@style/row_content_extra_text"
+          android:text="19" android:id="@+id/arena_stats_row_stat_wins"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          style="@style/row_content_extra_text"
+          android:text=" Wins, "/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          style="@style/row_content_extra_text"
+          android:text="19" android:id="@+id/arena_stats_row_stat_losses"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          style="@style/row_content_extra_text"
+          android:text=" Losses"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+      style="@style/row_content_text" android:id="@+id/arena_stats_row_stat_winrate"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+  <TextView android:layout_width="40dp" android:layout_height="wrap_content"
+      style="@style/row_classname_all" android:text="All Classes"
+      android:layout_marginLeft="16dp"
+      android:gravity="center"
+      android:layout_gravity="center_vertical"
+      android:layout_marginRight="16dp"
+      android:id="@+id/arena_stats_row_stat_class_name"/>
+
+  <LinearLayout android:layout_width="0dp"
+      android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/class_stats_row_overall_winrate" style="@style/row_content_text"/>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:id="@+id/class_stats_row_overall_wins"
+          style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:text=" Wins, " style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:id="@+id/class_stats_row_overall_losses"
+          style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:text=" Losses" style="@style/row_content_extra_text"/>
+
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    android:layout_height="match_parent">
+  <LinearLayout android:layout_width="wrap_content" android:gravity="center"
+      android:layout_height="wrap_content" android:orientation="vertical">
+    <com.trackobot.android.util.ClassIcon
+        xmlns:class="http://schemas.android.com/apk/res-auto"
+        style="@style/row_classicon"
+        android:id="@+id/history_row_classicon_player1"
+        class:border_width="2dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_classname" android:id="@+id/history_row_self"/>
+  </LinearLayout>
+
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+      android:text="vs" style="@style/row_classname" android:layout_gravity="center"
+      android:paddingBottom="10dp" android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"/>
+  <LinearLayout android:layout_width="wrap_content" android:gravity="center"
+      android:layout_height="wrap_content" android:orientation="vertical">
+    <com.trackobot.android.util.ClassIcon
+        xmlns:class="http://schemas.android.com/apk/res-auto"
+        style="@style/row_classicon"
+        class:border_width="2dp"
+        android:id="@+id/history_row_classicon_player2"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/row_classname" android:id="@+id/history_row_opponent"/>
+  </LinearLayout>
+
+
+  <LinearLayout android:layout_width="wrap_content" android:layout_weight="1"
+      android:layout_marginLeft="16dp"
+      android:layout_height="wrap_content" android:orientation="vertical">
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:id="@+id/history_row_mode" style="@style/row_content_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_weight="1" android:gravity="center" style="@style/row_content_text"
+          android:text=", "/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_weight="1" android:gravity="center" style="@style/row_content_text"
+          android:id="@+id/history_row_result"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:id="@+id/history_row_date"
+          style="@style/row_content_extra_text"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_weight="1" android:gravity="center" style="@style/row_content_extra_text"
+          android:text=", "/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          style="@style/row_content_extra_text"
+          android:id="@+id/history_row_duration"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>

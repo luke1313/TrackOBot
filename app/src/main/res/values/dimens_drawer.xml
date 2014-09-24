@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="drawer_settings_textSize">16sp</dimen>
+  <dimen name="drawer_divider_height">2px</dimen>
+  <dimen name="drawer_settings_padding">6dp</dimen>
+  <dimen name="drawer_user_pic">38dp</dimen>
+</resources>
