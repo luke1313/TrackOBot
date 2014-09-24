@@ -31,10 +31,10 @@ public class DrawerEntries {
     entries.add(new SpaceDrawerEntry());
     entries.add(new HeadlineDrawerEntry("Other"));
     entries.add(new ShareDrawerEntry(new Intent(Intent.ACTION_SEND), "Share this App"));
-    entries.add(new DividerDrawerEntry());
-    entries.add(new SettingsDrawerEntry(null, "Imprint"));
-    entries.add(new DividerDrawerEntry());
-    entries.add(new SettingsDrawerEntry(null, "Open-Source-Licenses"));
+    //entries.add(new DividerDrawerEntry());
+    //entries.add(new SettingsDrawerEntry(null, "Imprint"));
+    //entries.add(new DividerDrawerEntry());
+    //entries.add(new SettingsDrawerEntry(null, "Open-Source-Licenses"));
     return entries;
   }
 }

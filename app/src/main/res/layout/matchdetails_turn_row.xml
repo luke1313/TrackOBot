@@ -11,12 +11,15 @@
   <LinearLayout android:layout_width="wrap_content"
       android:orientation="horizontal"
       android:layout_height="wrap_content" android:paddingRight="8dp"
-      android:paddingTop="4dp" android:paddingBottom="4dp" android:background="@color/white"
+      android:paddingTop="4dp" android:paddingBottom="4dp"
+      android:background="@color/main_pink"
       android:paddingLeft="8dp">
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="turn "
+        style="@style/turn_row"
+        android:text="Turn "
         />
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        style="@style/turn_row"
         android:text="2"
         android:id="@+id/matchdetails_turn_row_text"
         />

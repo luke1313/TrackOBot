@@ -5,6 +5,5 @@ package com.trackobot.android;
  */
 public class Config {
 
-  public static boolean HTTP_LOGGING = true;
-
+  public static boolean HTTP_LOGGING = false;
 }
